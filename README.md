@@ -1,4 +1,4 @@
-# BDB Project (TSTI2D) (LE BOUDER Alan)
+# BDB Project (TSTI2D) (LE BOUDER Alan / PICCINI Mattéo)
 
 Voici le repo officiel du projet de la baie de brassage.
 En développement.
