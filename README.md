@@ -6,7 +6,7 @@ Voici le repo officiel du projet de la baie de brassage.
 En développement.
 
 ### Structure :
--   `BDB_www` : C'est le dossier qui contient le projet django en python.
+-   `BDB_www` : Le dossier qui contient le projet django en python.
 
 ### Prérequis :
 -   `python` (>=3.6)
