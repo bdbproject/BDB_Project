@@ -3,3 +3,6 @@
 
 # Utility scripts
 runserver.sh
+
+# sqlite3 DB
+BDB_DB
