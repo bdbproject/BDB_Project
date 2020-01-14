@@ -12,7 +12,7 @@ En développement.
 -   `python` (>=3.6)
 -   `django` (>=3.0)
 -   `django-debug-toolbar` (>=2.0)
--   `RPi.GPIO`
+-   `RPi.GPIO` (>=0.6.2)
 
 ### TODO :
 -   Amiliorer la gestion des settings (rendre plus portable).
