@@ -13,3 +13,8 @@ En développement.
 -   `django` (>=3.0)
 -   `django-debug-toolbar` (>=2.0)
 -   `psycopg2` (>=2.8)
+
+### TODO :
+-   Amiliorer la gestion des settings (rendre plus portable).
+-   Faire le module d'interface avec les capteurs.
+-   Faire le module de gestion de ventilation (dépendant du module d'intergace avec les capteurs).
