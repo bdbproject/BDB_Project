@@ -15,6 +15,6 @@ En développement.
 -   `RPi.GPIO` (>=0.6.2)
 
 ### TODO :
--   Amiliorer la gestion des settings (rendre plus portable).
+-   Amiliorer la gestion des settings (rendre plus portable, utiliser un configure + un Makefile).
 -   Faire le module d'interface avec les capteurs.
 -   Faire le module de gestion de ventilation (dépendant du module d'intergace avec les capteurs).
