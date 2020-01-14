@@ -25,7 +25,7 @@ SECRET_KEY = '53iie!6_jhjuwef$y=_^b198+j)v1mae=*org=#il3gn^b+q0n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -54,7 +54,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'BDB_www.urls'
 
-INTERNAL_IPS = ['127.0.0.1']
+INTERNAL_IPS = ['127.0.0.1', '192.168.0.153']
 
 TEMPLATES = [
     {
@@ -80,12 +80,8 @@ WSGI_APPLICATION = 'BDB_www.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'BDB_DB',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'localhost',
-        'PORT': '5432',
     }
 }
 
