@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'BDB_www.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'BDB_DB',
+        'NAME': 'BDB_DB.db',
     }
 }
 

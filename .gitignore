@@ -5,4 +5,7 @@
 runserver.sh
 
 # sqlite3 DB
-BDB_DB
+BDB_DB.db
+
+# Ignore vscode folder
+.vscode
