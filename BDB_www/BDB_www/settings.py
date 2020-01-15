@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '53iie!6_jhjuwef$y=_^b198+j)v1mae=*org=#il3gn^b+q0n'
+SECRET_KEY = '8-g)!iu*xv2-hd)pb0!mi6i%3qe^-izg@ym*3e$yf(+v$t%+2+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'store.apps.StoreConfig',
+    'BDB_monitoring.apps.BdbMonitoringConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -52,9 +52,9 @@ MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
-ROOT_URLCONF = 'BDB_www.urls'
-
 INTERNAL_IPS = ['127.0.0.1']
+
+ROOT_URLCONF = 'BDB_www.urls'
 
 TEMPLATES = [
     {
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'BDB_www.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'BDB_DB.db',
+        'NAME': os.path.join(BASE_DIR, 'DB.db'),
     }
 }
 

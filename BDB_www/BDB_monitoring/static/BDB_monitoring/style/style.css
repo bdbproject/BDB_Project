@@ -1,0 +1,99 @@
+/* Principal types */
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+    color: #333;
+    background-image: repeating-radial-gradient(circle at center, white, rgb(180, 180, 180));
+}
+
+#bloc_page
+{
+    width: 75%;
+    min-width: 850px;
+    margin: auto;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 10px;
+    margin-top: 8px;
+    box-shadow: 10px 10px 10px #333;
+
+    background-color: #008ac0;
+    color: #FFF;
+
+    border-radius: 16px;
+}
+
+header h1
+{
+    font-size: 32px;
+    text-shadow: 5px 5px 10px black;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 10px;
+}
+
+nav a, nav a:visited
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px blue dotted;
+    color: white;
+
+    border-radius: 10px;
+    padding: 10px;
+
+    transition-property: background-color;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-out;
+}
+
+nav a:hover
+{
+    background-color: rgba(128, 128, 128, 0.75);
+}
+
+nav a:active
+{
+    color: blue;
+}
+
+/* Footer */
+
+footer
+{
+    background-color: #AAA;
+    color: black;
+
+    margin: auto;
+    margin-top: 10px;
+    padding: 8px;
+    text-align: center;
+}
+
+footer p
+{
+    margin: auto;
+}

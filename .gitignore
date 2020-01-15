@@ -2,10 +2,10 @@
 *.pyc
 
 # Utility scripts
-runserver.sh
+*.sh
 
 # sqlite3 DB
-BDB_DB.db
+*.db
 
 # Ignore vscode folder
 .vscode
