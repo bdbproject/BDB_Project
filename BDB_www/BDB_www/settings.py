@@ -54,7 +54,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'BDB_www.urls'
 
-INTERNAL_IPS = ['127.0.0.1', '192.168.0.153']
+INTERNAL_IPS = ['127.0.0.1']
 
 TEMPLATES = [
     {
