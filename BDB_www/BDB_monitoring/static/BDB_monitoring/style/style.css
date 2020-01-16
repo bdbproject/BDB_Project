@@ -97,3 +97,27 @@ footer p
 {
     margin: auto;
 }
+
+/* Erreur 404 */
+
+#error-404
+{
+    background-color: rgb(175, 175, 175);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #333;
+    border: 2px black dotted;
+
+    margin: auto;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 8px;
+    padding-left: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#error-404 h1
+{
+    color: rgb(255, 0, 0);
+    text-shadow: 5px 5px 5px #333;
+}

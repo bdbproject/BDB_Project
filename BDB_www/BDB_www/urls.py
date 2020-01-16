@@ -15,14 +15,14 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls import include, url
-from django.contrib import admin
 
+from django.views.generic import RedirectView
 from BDB_monitoring import views
 
 urlpatterns = [
-    url(r'^index$', views.index),
-    url(r'^$', views.index),
-    url(r'^admin/', admin.site.urls),
+    url(r'^index$', views.IndexView.as_view(), name='Index'),
+    url(r'^$', RedirectView.as_view(pattern_name='Index', permanent=False)),
+    url(r'^login$', views.LoginView.as_view(), name='Login')
 ]
 
 if settings.DEBUG:
