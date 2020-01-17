@@ -22,7 +22,8 @@ from BDB_monitoring import views
 urlpatterns = [
     url(r'^index$', views.IndexView.as_view(), name='Index'),
     url(r'^$', RedirectView.as_view(pattern_name='Index', permanent=False)),
-    url(r'^login$', views.LoginView.as_view(), name='Login')
+    url(r'^login$', views.LoginView.as_view(), name='Login'),
+    url(r'^monitoring$', views.MonitoringView.as_view(), name='Monitoring')
 ]
 
 if settings.DEBUG:
