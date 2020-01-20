@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
-from django.http import *
+from django.http import request
 from django.views.generic import TemplateView
 from django.conf import settings
-from Adafruit_DHT import *
+from .models import HUMIDITY, TEMP
 
 # Create your views here.
 
@@ -26,9 +26,8 @@ class MonitoringView(TemplateView):
     template_name = 'BDB_monitoring/monitoring.html'
 
     def get(self, request, **kwargs):
-        humidity, temp = read_retry(DHT11, 23, 3, 5)
         context = {
-            'humidity':str(humidity),
-            'temp':str(temp),
+            'humidity':str(HUMIDITY),
+            'temp':str(TEMP),
         }
         return render(request, self.template_name, context)
