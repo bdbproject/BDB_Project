@@ -9,7 +9,7 @@ En développement.
 -   `BDB_www` : Le dossier qui contient le projet django en python.
 
 ### Prérequis :
--   `python` (>=3.6)
+-   `python` (=3.6.x)
 -   `django` (>=3.0)
 -   `django-debug-toolbar` (>=2.0)
 -   `RPi.GPIO` (>=0.6.2)
